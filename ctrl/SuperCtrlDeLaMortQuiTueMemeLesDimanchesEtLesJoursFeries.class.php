@@ -6,12 +6,13 @@ class SuperCtrlDeLaMortQuiTueMemeLesDimanchesEtLesJoursFeries
     /* on mets en private les sous-contrôleurs */
     private $_weekMealsCtrl;
     private $_reservationCtrl;
-
+    
 
 
     public function __construct() {
             $this->_weekMealsCtrl = new WeekMealsController();
             $this->_reservationCtrl = new ReservationController();
+            $this->_eventCtrl = new EventsController();
 
     }
 
@@ -48,6 +49,11 @@ class SuperCtrlDeLaMortQuiTueMemeLesDimanchesEtLesJoursFeries
                 unset($_SESSION['flash']);
             }
         }
+    }
+    
+    public function getCurrentEvents() {
+        return $this->_eventCtrl->getUpcomingEvents();
+        
     }
 
 }
