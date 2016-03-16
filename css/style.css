@@ -1,376 +1,380 @@
 html {
-	height: 100%;
+    height: 100%;
 }
 body {
-	position: relative;
-	min-height: 100%;
-	margin: 0;
-	padding: 0;
-	background: url('../img/background.jpg') fixed ;
-	background-size: cover;
+    position: relative;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    background: url('../img/background.jpg') fixed ;
+    background-size: cover;
 }
 .vpheight {
-	height: 100vh;
-	position: relative;
+    height: 100vh;
+    position: relative;
 }
 
 .clear {
-	clear: both;
+    clear: both;
 }
 
 /*                 Caroussel de la bouffe                */
 #caroussel {
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: -10;
-	width: 100%;
-	height:100vh;
-	background: #000;
-	overflow:hidden;
-	min-width: 800px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -10;
+    width: 100%;
+    height:100vh;
+    background: #000;
+    overflow:hidden;
+    min-width: 800px;
 }
 
 .imgcontainer {
-	position: relative;
-	padding: 0px;
-	margin: 0px;
-	width: 100vw;
-	height:100vh;
-	overflow: hidden;
-	background-color: black;
+    position: relative;
+    padding: 0px;
+    margin: 0px;
+    width: 100vw;
+    height:100vh;
+    overflow: hidden;
+    background-color: black;
 }
 
 .imgslide {
-	float: left;
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	width: 100vw;
-	height:100vh;
-	list-style:none;
-/* 	filter: blur(5px);
-	-webkit-filter: blur(5px);
-	-moz-filter: blur(5px); */
+    float: left;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height:100vh;
+    list-style:none;
+    /* 	filter: blur(5px);
+	    -webkit-filter: blur(5px);
+	    -moz-filter: blur(5px); */
 }
 /*                 Test fullscreen video                   */
 video { 
-	min-width: 100vw;
-	min-height: 100vh;
-	background: url("img/food.png" ) no-repeat;
-	background-size: cover;
-	opacity: 0.7;
-	transition: 1s opacity;
+    min-width: 100vw;
+    min-height: 100vh;
+    background: url("img/food.png" ) no-repeat;
+    background-size: cover;
+    opacity: 0.7;
+    transition: 1s opacity;
 }
 .stopfade { 
-	 opacity: .5;
+    opacity: .5;
 }
 
 /*                 Premier Container                     */
 .frist-contain {
-		min-width: 800px;
+    min-width: 800px;
 }
 /*                Menu de Navigation                    */
 nav {
-	position: fixed;
-	width: 100%;
-	z-index:100;
+    position: fixed;
+    width: 100%;
+    z-index:100;
 }
 
 #ulnav {
-	background: url('../img/banniere.jpg');
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	box-shadow: 0px 0px 10px black inset;
-	border: 2px solid rgb(217,138,12);
-	padding: 0px;
-	margin: 0px;
-	text-align: center;
+    background: url('../img/banniere.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0px 0px 10px black inset;
+    border: 2px solid rgb(217,138,12);
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
 }
 
 .navposition {
 
-	text-decoration: none;
-	list-style: none;
-	line-height: 60px;
-	color : rgb(220,217,0);
-	font-family: 'Podkova', serif;
-	display: inline-block;
-	padding: 0 1%; 
-	background: rgba(255,255,255,0);
-	transition: all 0.3s linear;
-	font-size: 1.2em;
+    text-decoration: none;
+    list-style: none;
+    line-height: 60px;
+    color : rgb(220,217,0);
+    font-family: 'Podkova', serif;
+    display: inline-block;
+    padding: 0 1%; 
+    background: rgba(255,255,255,0);
+    transition: all 0.3s linear;
+    font-size: 1.2em;
 }
 .navposition:nth-child(3) {
-		width: 100px;
+    width: 100px;
 }
 .logonav {
-	position: absolute;
-	top: -35px;
-	left: -14px;
-	width: 100px;
-	padding: 0 14%;
-	line-height: 30px;
-	font-family: 'Sancreek', cursive;
-	background: rgba(255,255,255,0);
-	transition: all 0.3s linear;
+    position: absolute;
+    top: -35px;
+    left: -14px;
+    width: 100px;
+    padding: 0 14%;
+    line-height: 30px;
+    font-family: 'Sancreek', cursive;
+    background: rgba(255,255,255,0);
+    transition: all 0.3s linear;
 }
 .logonav:hover {
-	background: rgba(220,137,18,0.7);
-	color: white;
+    background: rgba(220,137,18,0.7);
+    color: white;
 }
 .lilogo {
-	position: relative;
+    position: relative;
 
 }
 .navposition:hover {
-	background: rgba(220,137,18,0.7);
-	color: white;
+    background: rgba(220,137,18,0.7);
+    color: white;
 }
 
 /*                    Centre du header                    */
 header {
-		position: relative;
+    position: relative;
 }
 
 .centrage-apropos {
-	padding-top: 28vh;
-	text-align:center;
-	color: white;
+    padding-top: 28vh;
+    text-align:center;
+    color: white;
 }
 #descript {
-	display: inline-block;
-	width: 50vw;
-	border: 1px solid rgba(255,255,255,0.5);
-	background: rgba(0,0,0,0.5);
-	padding:  20px 40px;
+    display: inline-block;
+    width: 50vw;
+    border: 1px solid rgba(255,255,255,0.5);
+    background: rgba(0,0,0,0.5);
+    padding:  20px 40px;
 
 }
 h2 {
-	font-family: 'Sancreek', cursive;
-	letter-spacing: 0.1em;
-	font-size: 2em;
+    font-family: 'Sancreek', cursive;
+    letter-spacing: 0.1em;
+    font-size: 2em;
 }
 #descript p {
-	font-family: 'Dancing Script', cursive;
-	font-size: 1.2em;
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.2em;
 }
 
 .rightslide {
-	position: absolute;
-	width: 44px;
-	top: 50vh;
-	right: 5vw;
-	cursor: pointer;
+    position: absolute;
+    width: 44px;
+    top: 50vh;
+    right: 5vw;
+    cursor: pointer;
 }
 #prev {
-		color: rgba(255,255,255,0.7);
+    color: rgba(255,255,255,0.7);
 }
 .leftslide{
-	position: absolute;
-	width: 44px;
-	top: 50vh;
-	left: 5vw;
-	cursor: pointer;
+    position: absolute;
+    width: 44px;
+    top: 50vh;
+    left: 5vw;
+    cursor: pointer;
 }
 #next {
-	color: rgba(255,255,255,0.7);
+    color: rgba(255,255,255,0.7);
 }
 .cycle-pager {
-	position:absolute;
-	color: rgba(255,255,255,0.7);
-	bottom: 8vh;
-	font-size: 3.5em;
-	right: 8vw;
-	bottom: 3vh;
-	cursor: pointer;
+    position:absolute;
+    color: rgba(255,255,255,0.7);
+    bottom: 8vh;
+    font-size: 3.5em;
+    right: 8vw;
+    bottom: 3vh;
+    cursor: pointer;
 }
 
 
 /*                button bas de pages                */
 
 .bottomslide {
-	position:absolute;
-	bottom: 3vh;
-	left: 47.5vw;
+    position:absolute;
+    bottom: 3vh;
+    left: 47.5vw;
 }
 .bottomslide a {
-	color: rgba(255,255,255,0.7);
+    color: rgba(255,255,255,0.7);
 }
 
 /*                Centrage des sections              */
 
 .center {
-	padding: 15vh 0 0;
-	max-width: 1200px;
-	margin: 0 auto;
-	text-align: center;
+    padding: 15vh 0 0;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 /*               Section Réservation                 */
 
 .contain-resa {
-	width: 860px;
+    width: 860px;
 }
 
 #week-menu {
-	position: relative;
-	float: right;
-	border: 4px solid #A60505;
-	width: 371px;
-	min-height: 280px;
-	margin-right: 4%;
-	font-family: 'Podkova', serif;
-	font-size: 1em;
-	padding: 0px 1% 2%;
-	text-align: center;
+    position: relative;
+    float: right;
+    border: 4px solid #A60505;
+    width: 371px;
+    min-height: 280px;
+    margin-right: 4%;
+    font-family: 'Podkova', serif;
+    font-size: 1em;
+    padding: 0px 1% 2%;
+    text-align: center;
 }
 
 
 .menu {
-	margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 #horaire {
-	float: left;
-	border: 4px solid #A60505;
-	width: 356px;
-	min-height: 100px;
-	margin-left: 4%;
-	margin-bottom: 30px;
-	font-family: 'Podkova', serif;
-	font-size: 1.2em;
-	text-align: center;
+    float: left;
+    border: 4px solid #A60505;
+    width: 356px;
+    min-height: 100px;
+    margin-left: 4%;
+    margin-bottom: 30px;
+    font-family: 'Podkova', serif;
+    font-size: 1.2em;
+    text-align: center;
 }
 
 #form-resa {
-	position: relative;
-	clear: left;
-	width: 356px;
-	min-height: 150px;
-	margin-left: 4%;
-	font-family: 'Podkova', serif;
-	font-size: 1.2em;
-	border: 4px solid #A60505;
-	padding-bottom: 10px;
+    position: relative;
+    clear: left;
+    width: 356px;
+    min-height: 150px;
+    margin-left: 4%;
+    font-family: 'Podkova', serif;
+    font-size: 1.2em;
+    border: 4px solid #A60505;
+    padding-bottom: 10px;
 }
 .carte {
-	position: absolute;
-	text-align: center;
-	bottom: -43px;
-	right: 0;
-	height: 40px;
-	transition: all 0.3s linear;
-	border: 1px solid #AD9C71 ;
-	height: 40px;
-	width: 140px;
-	background: #AD9C71;
-	font-family: 'Podkova', serif;
-	font-size: 1em;
+    position: absolute;
+    text-align: center;
+    bottom: -43px;
+    right: 0;
+    height: 40px;
+    transition: all 0.3s linear;
+    border: 1px solid #AD9C71 ;
+    height: 40px;
+    width: 140px;
+    background: #AD9C71;
+    font-family: 'Podkova', serif;
+    font-size: 1em;
 }
 .carte a {
-	color: #EEE7D4;
-	text-decoration: none;
-	transition: all 0.25s linear;
+    color: #EEE7D4;
+    text-decoration: none;
+    transition: all 0.25s linear;
 }
 .carte:hover {
-	background: #EEE7D4;
+    background: #EEE7D4;
 
 }
 .carte:hover a {
-	color: #AD9C71;
+    color: #AD9C71;
 }
 
 h3 {
-	font-family: 'Sancreek', cursive;
-	text-align: center;
- }
-
- .formulaire-resa {
-	width: 320px;
-	margin: 0 auto;
- }
-.design-resa {
-	padding: 4px 0;
-	
+    font-family: 'Sancreek', cursive;
+    text-align: center;
 }
- 
+h2 {
+    font-family: 'Sancreek', cursive;
+    font-size: 1.5em;
+    letter-spacing: 0.05em;
+}
+.formulaire-resa {
+    width: 320px;
+    margin: 0 auto;
+}
+.design-resa {
+    padding: 4px 0;
+
+}
+
 .label-resa {
-	display: block;
-	width: 140px;
-	float: left;
-	color: black;
+    display: block;
+    width: 140px;
+    float: left;
+    color: black;
 }
 
 .design-resa input {
-	width: 160px;
-	border: none;
-	line-height: 30px;
+    width: 160px;
+    border: none;
+    line-height: 30px;
 }
 
 #submit {
-	position: absolute;
-	text-align: center;
-	border: 1px solid #AD9C71 ;
-	background: #AD9C71;
-	color: #EEE7D4;
-	bottom: -44px;
-	right: 0;
-	width: 140px;
-	height: 40px;
-	font-family: 'Podkova', serif;
-	font-size: 1em;
-	transition: all 0.25s linear;
+    position: absolute;
+    text-align: center;
+    border: 1px solid #AD9C71 ;
+    background: #AD9C71;
+    color: #EEE7D4;
+    bottom: -44px;
+    right: 0;
+    width: 140px;
+    height: 40px;
+    font-family: 'Podkova', serif;
+    font-size: 1em;
+    transition: all 0.25s linear;
 }
 #submit:hover {
-	background: #EEE7D4;
-	color: #AD9C71;
+    background: #EEE7D4;
+    color: #AD9C71;
 }
 
 /*                envenement              */
 
 .event {
-	position:  relative;
-	display: inline-block;
-	width: 30%;
-	margin: 0 1%;
-	min-height: 280px;
-	background-color: rgba(0,0,0,0.4);
-	color: white;
-	border: 4px solid #A60505;
-	letter-spacing: 0.03em;
+    position:  relative;
+    display: inline-block;
+    width: 30%;
+    margin: 0 1%;
+    min-height: 280px;
+    background-color: rgba(0,0,0,0.4);
+    color: white;
+    border: 4px solid #A60505;
+    letter-spacing: 0.03em;
 }
 
 .event-contain{
-	padding: 1%;
+    padding: 1%;
 }
 
 .img-1 {
-	position: absolute;
-	width: 100vw;
-	background: url('../img/wtf.jpg') center;
-	background-size: cover;
-	width: 100%;
-	height: 80%;
-	bottom: 0;
-	z-index: -1;
+    position: absolute;
+    width: 100vw;
+    background: url('../img/wtf.jpg') center;
+    background-size: cover;
+    width: 100%;
+    height: 80%;
+    bottom: 0;
+    z-index: -1;
 }
 .img-2 {
-	position: absolute;
-	background: url('../img/d55a68f37517b4d3e6484b2316623514.jpg') center;
-	background-size: cover;
-	width: 100%;
-	height: 80%;
-	bottom: 0;
-	z-index:-1;
+    position: absolute;
+    background: url('../img/d55a68f37517b4d3e6484b2316623514.jpg') center;
+    background-size: cover;
+    width: 100%;
+    height: 80%;
+    bottom: 0;
+    z-index:-1;
 }
 .img-3 {
-	position: absolute;
-	background: url('../img/mexique.jpg') center;
-	background-size: cover;
-	width: 100%;
-	height: 80%;
-	bottom: 0;
-	z-index: -1;
+    position: absolute;
+    background: url('../img/mexique.jpg') center;
+    background-size: cover;
+    width: 100%;
+    height: 80%;
+    bottom: 0;
+    z-index: -1;
 }
