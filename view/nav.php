@@ -13,7 +13,7 @@
 					LA CARTE
 				</li>
 			</a>
-			<a class="navposition" href="#">
+			<a class="navposition" href="index.php">
 				<li class="lilogo">
 					<div class="logonav">
 						LE QUAI DES<br/>MACHINES
