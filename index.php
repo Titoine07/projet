@@ -6,6 +6,7 @@ require_once './lib/autoLoader.php';
 if (session_status() == PHP_SESSION_NONE) {
 	session_start();
 }
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -48,7 +49,7 @@ if (session_status() == PHP_SESSION_NONE) {
 				case 'contact':
 					$superCtrl->displayContact();
 					break;
-
+				
 				default:
 					break;
 			}

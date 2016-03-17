@@ -3,8 +3,8 @@
 <!-- ------------------------------------------ Navigation ------------------------------------------ -->
 	<nav>
 		<ul id="ulnav">
-			<a class="navposition" href="#resa" >
-				<li class="">
+			<a class="navposition" href="index.php?#resa" >
+				<li class="#resa">
 					RESERVATION
 				</li>
 			</a>
