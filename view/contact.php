@@ -1,6 +1,6 @@
 
 
-<div class="container-fluid center-contact" style="font-family: 'Podkova', serif;">
+<div class=" center-contact" style="font-family: 'Podkova', serif;">
 	<div class="row">
 
 		<div class="col-sm-12" style="padding: 0px; margin-bottom: 10px">
