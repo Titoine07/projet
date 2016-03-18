@@ -6,12 +6,16 @@ class SuperCtrlDeLaMortQuiTueMemeLesDimanchesEtLesJoursFeries {
 	private $_weekMealsCtrl;
 	private $_reservationCtrl;
 	private $_eventCtrl;
+	private $_newsletterController;
+	private $_contactController;
 
 	
 	public function __construct() {
 		$this->_weekMealsCtrl = new WeekMealsController();
 		$this->_reservationCtrl = new ReservationController();
 		$this->_eventCtrl = new EventsController();
+		$this->_newsletterController = new NewsletterController();
+		$this->_contactController = new ContactController();
 	}
 
 	public function mainView() {
@@ -25,6 +29,11 @@ class SuperCtrlDeLaMortQuiTueMemeLesDimanchesEtLesJoursFeries {
 		require './view/reservation.php';
 		require './view/evenement.php';
 	}
+	
+	public function displayContact(){
+		require './view/nav.php';
+		require './view/contact.php';
+    }
 
 	public function getCurrentWeekMeals() {
 		$plats = $this->_weekMealsCtrl->getWeekMealsById(date('W'));
@@ -53,23 +62,24 @@ class SuperCtrlDeLaMortQuiTueMemeLesDimanchesEtLesJoursFeries {
 		
 		$this->_reservationCtrl->mailOperations(
 			$data['name'], $data['phone'], $data['date'], $data['time'], $data['chairs'], $data['email']);
-				
 	}
 		
-		public function alertFlash(){
+	public function alertFlash(){
 		// Affiche les erreurs de $_SESSION['flash']
-		if (isset($_SESSION['flash'])) {
-			foreach ($_SESSION['flash'] as $typeFlash => $message) {
-				if ($message == "danger") {
-					foreach ($message as $error) {
-						echo '<div class="alert alert-' . $typeFlash . '">' . $error . '</div>';
-					}
-				} else {
-					echo '<div class="alert alert-' . $typeFlash . '">' . $message . '</div>';
+		if (!empty($_SESSION['flash'])) {
+			if ($_SESSION['flash'] == "success") {
+				return $_SESSION['flash']['success'];
+			} else {
+				foreach ($_SESSION['flash'] as $message) {
+
+					echo $message;
 				}
-			unset($_SESSION['flash']);
 			}
+			unset($_SESSION['flash']);
 		}
 	}
 
+	
+	
+	
 }

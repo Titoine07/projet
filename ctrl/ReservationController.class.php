@@ -8,35 +8,34 @@ class ReservationController {
 
 		// Verif Name
 		if (empty($name)) {
-
-			$_SESSION['flash']['danger'] = "Enter name";
+			$_SESSION['flash']['name'] = '<div class="alert alert-danger">Enter name</div>';
 		} else {
 			// Nettoyage balises HTML
 			$name = htmlspecialchars($name);
 		}
 
 		// Verif phone
-		if (!preg_match("/^[0-9\-]|[\+0-9]|[0-9\s]|[0-9()]*$/", $phone)) {
+		if (!preg_match("/^((\+\d{1,3}(-| )?\(?\d\)?(-| )?\d{1,5})|(\(?\d{2,6}\)?))(-| )?(\d{3,4})(-| )?(\d{4})(( x| ext)\d{1,5}){0,1}$/", $phone)) {
+			$_SESSION['flash']['phone'] = '<div class="alert alert-danger">Invalid Phone number</div>';
 
-			$_SESSION['flash']['danger'] = "Invalid phone number";
 		}
 
 		// Verif Email
 		if (!preg_match("#^[a-z0-9._-]+@[a-z0-9._-]{2,}\.[a-z]{2,4}$#", $email)) {
 
-			$_SESSION['flash']['danger'] = "Invalid Email";
+			$_SESSION['flash']['name'] = '<div class="alert alert-danger">Invalid Mail</div>';
 		}
 
 		// Verif Date et Heure
 		if ((!isset($date)) && (!isset($time))) {
 
-			$_SESSION['flash']['danger'] = "Please chose Date and Time";
+			$_SESSION['flash']['date'] = '<div class="alert alert-danger">Invalid Date</div>';
 		}
 
 		// Si pas d'erreurs flash en session, on envoit le mail
 		if (!empty($_SESSION['flash'])) {
 
-			header('Location:http://localhost/projet/index.php?#resa');
+			return $_SESSION['flash'];
 			
 		} else {
 
@@ -92,7 +91,7 @@ class ReservationController {
 			//=====Envoi de l'e-mail.
 			mail($mail, $sujet, $message, $header);
 			//==========
-			$_SESSION['flash']['success'] = "Your reservation has been send. We will contact you soon to confirm your booking";
+			$_SESSION['flash']['success'] = '<div class="alert alert-success">Your reservation has been send. We will contact you soon to confirm your booking</div>';
 				
 		}
 	}

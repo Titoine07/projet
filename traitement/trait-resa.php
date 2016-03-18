@@ -1,4 +1,5 @@
 <?php
+session_start();
 require_once '../lib/autoLoader.php';
 $superCtrl = new SuperCtrlDeLaMortQuiTueMemeLesDimanchesEtLesJoursFeries();
 	

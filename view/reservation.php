@@ -8,7 +8,6 @@
 			<?php
 			$superCtrl = new SuperCtrlDeLaMortQuiTueMemeLesDimanchesEtLesJoursFeries();
 			$superCtrl->getCurrentWeekMeals();
-
 			?>
 			<button class="carte"><a href="index.php?action=carte">MENU</a></button>
 		</div>
@@ -23,18 +22,18 @@
 
 		<div id="form-resa">
 
-			
+
 			<h3>RESERVATION</h3>
 
-			<form class="formulaire-resa" action="traitement/trait-resa.php" method="post" > <!--			action="index.php?resa=cerveza"-->
+			<form class="formulaire-resa" action="traitement/trait-resa.php" method="post" > 
 				<div class="design-resa">
 					<label class="label-resa" for="textinput">NOM</label>
-					<input id="textinput" name="name" type="text" placeholder="Enter your name" class="form" required="required"><br/>
+					<input id="textinput" name="name" type="text" placeholder="Nom" class="form"><br/>
 				</div>
 
 				<div class="design-resa">
 					<label class="label-resa" for="phone">TELEPHONE</label>
-					<input id="phone" name="phone" type="tel" placeholder="Enter your phone number" class="form" required="required"><br/>
+					<input id="phone" name="phone" type="tel" placeholder="Téléphone" class="form" required="required"><br/>
 				</div>
 
 				<div class="design-resa">
@@ -54,15 +53,16 @@
 
 				<div class="design-resa">
 					<label class="label-resa" for="email">EMAIL</label>
-					<input id="email" name="email" type="email"  class="form" placeholder="Enter your Email Adress" required="required"><br/>
+					<input id="email" name="email" type="email"  class="form" placeholder="E-mail" required="required"><br/>
 				</div>
 
 
 				<button id="submit" name="submit" class="btn-resa">RESERVER</button>
 			</form>
-			
-			<?php 	
+
+			<?php
 			$superCtrl->alertFlash();
+			unset($_SESSION['flash']);
 			?>
 
 		</div>
