@@ -14,12 +14,11 @@ if (session_status() == PHP_SESSION_NONE) {
 
 		<meta charset= "UTF-8"/>
 
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="js/gallery.js"></script>
 		<script type="text/javascript" src="js/script.js"></script>
-		<script type="text/javascript" src="js/jquery.cycle2.js"></script>
-		<script type="text/javascript" src="js/jquery.cycle2.carousel.js"></script>
-		<script type="text/javascript" src="js/jquery.cycle2.video.js"></script>
+
 		<link href='https://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Sancreek' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Podkova' rel='stylesheet' type='text/css'>
@@ -28,7 +27,7 @@ if (session_status() == PHP_SESSION_NONE) {
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 		<link rel="stylesheet" type="text/css" href="css/style.css"/>
 		<title>Le Quai des Machines</title>
-
+	
 	</head>
 
 	<body>

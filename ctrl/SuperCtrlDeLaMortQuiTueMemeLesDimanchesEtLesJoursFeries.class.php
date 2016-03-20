@@ -79,7 +79,10 @@ class SuperCtrlDeLaMortQuiTueMemeLesDimanchesEtLesJoursFeries {
 		}
 	}
 
-	public function 
+	public function displayResto() {
+		require './view/nav.php';
+		require './view/retso.php';
+	}
 	
 	
 	
