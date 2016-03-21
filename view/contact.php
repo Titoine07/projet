@@ -1,15 +1,15 @@
 
 
-<div class=" center-contact" style="font-family: 'Podkova', serif;">
+<div class=" center-contact" >
 	<div class="row">
 
-		<div class="col-sm-12" style="padding: 0px; margin-bottom: 10px">
-			<a target="_blank" href="https://www.google.com/maps/place/Les+Machines+de+l'%C3%AEle/@47.2049586,-1.5622382,15.75z/data=!4m2!3m1!1s0x0:0xb1bb929d858aecf9?hl=fr-FR"><img  src="img/map.jpg" style="border: 1px solid lightsteelblue ;width: 100% ; border-radius: 5px""></a>
+		<div class="col-sm-12" style="padding: 0px; margin-bottom: 20px">
+			<a target="_blank" href="https://www.google.com/maps/place/Les+Machines+de+l'%C3%AEle/@47.2049586,-1.5622382,15.75z/data=!4m2!3m1!1s0x0:0xb1bb929d858aecf9?hl=fr-FR"><img  src="img/map.jpg" style="border: 1px solid #AD9C71; ;width: 100% ; border-radius: 5px""></a>
 		</div>
 
 		<hr>
 
-		<div class="col-sm-12" style="background-color: rgba(0, 0, 0, 0.15); border: 1px solid lightsteelblue; border: 0px; border-radius: 5px">
+		<div class="col-sm-12 col-contact" >
 
 			<div class="col-sm-6">
 				<h2>Le Quai Des Machines</h2>

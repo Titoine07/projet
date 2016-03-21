@@ -9,7 +9,7 @@
 			$superCtrl = new SuperCtrlDeLaMortQuiTueMemeLesDimanchesEtLesJoursFeries();
 			$superCtrl->getCurrentWeekMeals();
 			?>
-			<button class="carte"><a href="index.php?action=carte">MENU</a></button>
+			<button class="liencarte"><a href="index.php?action=carte">MENU</a></button>
 		</div>
 
 		<div id="horaire">
